@@ -1,0 +1,1 @@
+(e.g., reversing words in a string, palindrome, string manipulation) in a shared online compiler. 
