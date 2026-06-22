@@ -36,3 +36,7 @@ list_cpy = list_org.copy() # with this it will not update original list
 list_cpy = list(list_org)
 # option3
 list_cpy = list_org[:]
+
+# list with for loop
+mylist  = [1, 2, 3, 4]
+new_list = [ i*i for i in mylist] #1, 4, 9, 16]
