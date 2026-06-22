@@ -1,5 +1,5 @@
 (e.g., reversing words in a string, palindrome, string manipulation) in a shared online compiler. 
-1. Find the largest number in list
+# 1. Find the largest number in list
 ```
 option:1 
 numbers = [10, 24, 76, 23, 12]
@@ -31,7 +31,7 @@ largest = numbers[-1]
 
 print(largest)  # Output: 76
 ```
-2. Reverse String
+# 2. Reverse String
 ```
 def reverse_string(s):
     return s[::-1]
@@ -39,7 +39,7 @@ def reverse_string(s):
 print(reverse_string("Python"))  # Output: nohtyP
 
 ```
-3. Check palindrome
+# 3. Check palindrome
 ```
 option1: 
 name = "naman"
@@ -54,7 +54,7 @@ def is_palindrome(s):
 
 print(is_palindrome("racecar"))  # Output: True
 ```
-4. Find second larget number 
+# 4. Find second larget number 
 ```
 def second_largest(numbers):
     unique_nums = list(set(numbers))
@@ -63,7 +63,7 @@ def second_largest(numbers):
 
 print(second_largest([10, 5, 20, 20, 8]))  # Output: 10
 ```
-5. Check if number is Prime
+# 5. Check if number is Prime
 ```
 def is_prime(n):
     if n <= 1:
@@ -78,7 +78,7 @@ def is_prime(n):
 print(is_prime(17))  # True
 print(is_prime(18))  # False
 ```
-6. Swap two string
+# 6. Swap two string
 ```
 a = "Hello"
 b = "World"
