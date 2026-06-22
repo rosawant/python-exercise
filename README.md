@@ -88,7 +88,7 @@ a, b = b, a
 print(a)  # World
 print(b)  # Hello
 ```
-Swap first and last character
+# 7. Swap first and last character
 ```
 def swap_string(s):
     if len(s) < 2:
@@ -96,4 +96,25 @@ def swap_string(s):
     return s[-1] + s[1:-1] + s[0]
 
 print(swap_string("python"))
+```
+# 8. Count Vowels in a String
+```
+def count_vowels(s):
+    # Define vowels
+    vowels = "aeiouAEIOU"
+    # Initialize count
+    count = 0
+    # Count vowels
+    for char in s:
+        if char in vowels:
+            count += 1
+    return count
+
+count_vowels("hello") #2
+```
+# 9. Check if number is even from the list
+```
+a = [1, 2, 3, 4, 5, 6]
+even_num = filter(lambda x: x%2 == 0, a)
+print(list(even_num)) #[2, 4, 6]
 ```

@@ -1,25 +1,25 @@
-# Colletions: counter, namedtuple, OrderedDict, defaultdict, deque
-# from collections import Counter
-# a = "aaaabbbcc"
+##Colletions: counter, namedtuple, OrderedDict, defaultdict, deque
+from collections import Counter
+a = "aaaabbbcc"
 
-# my_counter = Counter(a)
-# print(my_counter) #Counter({'a': 4, 'b': 3, 'c': 2})
-# print(my_counter.keys()) #dict_keys(['a', 'b', 'c'])
-# print(my_counter.values()) #dict_values([4, 3, 2])
-# print(my_counter.most_common(1)) #{'a': 4}
-# print(my_counter.most_common(2)) #{'a': 4, 'b': 3} #gives list of most common key-value
-# print(my_counter.most_common(1)[0]) #('a', 4)
-# print(my_counter.most_common(1)[0][0]) #a
-# print(list(my_counter.elements())) #['a', 'a', 'a', 'a', 'b', 'b', 'b', 'c', 'c']
+my_counter = Counter(a)
+print(my_counter) #Counter({'a': 4, 'b': 3, 'c': 2})
+print(my_counter.keys()) #dict_keys(['a', 'b', 'c'])
+print(my_counter.values()) #dict_values([4, 3, 2])
+print(my_counter.most_common(1)) #{'a': 4}
+print(my_counter.most_common(2)) #{'a': 4, 'b': 3} #gives list of most common key-value
+print(my_counter.most_common(1)[0]) #('a', 4)
+print(my_counter.most_common(1)[0][0]) #a
+print(list(my_counter.elements())) #['a', 'a', 'a', 'a', 'b', 'b', 'b', 'c', 'c']
 
 
-# ### NamedTuple
-# from collections import namedtuple
+### NamedTuple
+from collections import namedtuple
 
-# Point = namedtuple('Point','x,y')
-# pt = Point(1,4)
-# print(pt) #Point(x=1, y=4)
-# print(pt.x) #1
+Point = namedtuple('Point','x,y')
+pt = Point(1,4)
+print(pt) #Point(x=1, y=4)
+print(pt.x) #1
 
 ### OrderedDict
 from collections import defaultdict
