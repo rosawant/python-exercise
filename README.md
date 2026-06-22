@@ -1,4 +1,3 @@
-(e.g., reversing words in a string, palindrome, string manipulation) in a shared online compiler. 
 # 1. Find the largest number in list
 ```
 option:1 
