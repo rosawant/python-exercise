@@ -52,7 +52,15 @@ def is_palindrome(s):
     return cleaned == cleaned[::-1]
 
 print(is_palindrome("racecar"))  # Output: True
+
+option3:
+def is_palindrome(s: str) -> bool:
+    clean_str = "".join(char.lower() for char in s if char.isalnum())
+    return clean_str == clean_str[::-1]
+
+print(is_palindrome("A man, a plan, a canal: Panama")) # Output: True
 ```
+
 # 4. Find second larget number 
 ```
 def second_largest(numbers):
@@ -116,4 +124,68 @@ count_vowels("hello") #2
 a = [1, 2, 3, 4, 5, 6]
 even_num = filter(lambda x: x%2 == 0, a)
 print(list(even_num)) #[2, 4, 6]
+```
+# 10. Common Characters Between Two Strings
+## with set
+```
+s1 = "hello"
+s2 = "world"
+
+common = set(s1) & set(s2)
+
+print("Common characters:", common)
+```
+## without set
+```
+s1 = "hello"
+s2 = "world"
+
+print("Common characters:")
+for ch in s1:
+    if ch in s2:
+        print(ch, end=" ")
+```
+# 11.Characters Present in First String but Not in Second
+```
+s1 = "hello"
+s2 = "world"
+
+not_common = set(s1) - set(s2)
+
+print("Not common in s1:", not_common)
+```
+```
+
+```
+# 12. Characters Not Common in Either String (Symmetric Difference)
+```
+s1 = "hello"
+s2 = "world"
+
+not_common = set(s1) ^ set(s2)
+
+print("Not common characters:", not_common)
+```
+# 13 Count character freqenecies
+```
+from collections import Counter
+
+def char_frequency(s: str) -> dict:
+    # Efficient O(n) lookup using built-in Counter
+    return dict(Counter(s))
+
+print(char_frequency("apple")) # Output: {'a': 1, 'p': 2, 'l': 1, 'e': 1}
+```
+# 14  Remove Duplicates from a List
+```
+# Method 1: Fast but does not preserve original element order
+def remove_duplicates_fast(lst: list) -> list:
+    return list(set(lst))
+
+# Method 2: Preserves insertion order (Python 3.7+)
+def remove_duplicates_ordered(lst: list) -> list:
+    return list(dict.fromkeys(lst))
+
+nums = [1, 2, 2, 3, 4, 4, 1]
+print(remove_duplicates_ordered(nums)) # Output: [1, 2, 3, 4]
 ```
